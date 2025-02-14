@@ -1,0 +1,25 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="slider">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <img id="main-image" src="image1.jpg" alt="Main Image">
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <div class="thumbnails">
+        <img class="thumb" src="image1.jpg" onclick="changeSlide(0)">
+        <img class="thumb" src="image2.jpg" onclick="changeSlide(1)">
+        <img class="thumb" src="image3.jpg" onclick="changeSlide(2)">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
